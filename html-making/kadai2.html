@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 	<meta content="ja" http-equiv="Content-Language" />
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 	<title>
-		課題10
+		課題02
 	</title>
 	<style type="text/css">
 		.auto-style1 {
@@ -94,11 +94,11 @@
 	<hr/>
 	<div class="auto-style12">
 		<strong>
-			課題10：金種計算 Part.2
+			課題02：10進数を2進数に変換しよう！
 			<br />
 		</strong>
 		<span class="auto-style13">
-			キーワード：for文，除算演算子，剰余演算子，配列
+			キーワード：基数変換、2進数、10進数、順次処理
 		</span>
 	</div>
 	<hr/>
@@ -114,24 +114,20 @@
 					<p class="auto-style15">
 						<strong>
 							<span class="auto-style14">
-								for文を使って金種計算するプログラムを作成しなさい。
+								10進数を2進数に変換する基数変換のプログラムを作成しなさい。ただし繰り返し処理（for文、while文など）は行わないこと。<br/>
+								実行例の通り、2進数の11桁目（2^10）から表示させること。
 							</span>
 						</strong>
 					</p>
 					<p class="auto-style15">
-						<br />
-						<span class="auto-style14">実行例：</span><br />
-						&emsp;&emsp;金額を入力してください &gt; 23456<br />
-						&emsp;&emsp;10000円札は2枚です<br />
-						&emsp;&emsp;5000円札は0枚です<br />
-						&emsp;&emsp;2000円札は1枚です<br />
-						&emsp;&emsp;1000円札は1枚です<br />
-						&emsp;&emsp;500円玉は0枚です<br />
-						&emsp;&emsp;100円玉は4枚です<br />
-						&emsp;&emsp;50円玉は1枚です<br />
-						&emsp;&emsp;10円玉は0枚です<br />
-						&emsp;&emsp;5円玉は1枚です<br />
-						&emsp;&emsp;1円玉は1枚です<br />
+						<span class="auto-style14">条件：</span><br />
+						&emsp;&emsp;入力される10進数は最大で2047(2の11乗-1)までとする。<br />
+					</p>
+					<p class="auto-style15">
+						<span class="auto-style14">実行例：</span><br/>
+						&emsp;&emsp;※「2000」を入力すると「11111010000」と表示される。<br />
+						&emsp;&emsp;10進数を入力してください > 2000<br />
+						&emsp;&emsp;11111010000<br />
 					</p>
 				</div>
 			</fieldset>
@@ -144,18 +140,16 @@
 
 int	main( void )
 {
-	int	money;	// 紙幣や硬貨の枚数を計算する金額
-	int	bill[ 10 ] = { 10000, 5000, 2000, 1000, 500, 100, 50, 10, 5, 1 };// 紙幣や硬貨の額
-	int	no;		// 現在調べている紙幣や硬貨の枚数
-	int	i;
+	int	dec;// 2進数へ変換される10進数
+	int	no;	// 2進数へ基数変換された桁の数値(0または1)
 
-	printf( "金額を入力してください >" );
-	scanf( "%d", &money );
-
-	//// 以下に金種計算のプログラムを作成する
+	printf( "10進数を入力してください > " );
+	scanf( "%d", &dec );
+	//// 以下に基数変換のプログラムを作成する。
 
 	return 0;
-}</textarea>
+}
+		</textarea>
 		<div class="auto-style22" id="layer1">
 			ファイルで提出する（.cpp限定）
 			<input name="cppfiles" style="width: 504px" type="file" />

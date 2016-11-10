@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 	<meta content="ja" http-equiv="Content-Language" />
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 	<title>
-		課題10
+		課題05
 	</title>
 	<style type="text/css">
 		.auto-style1 {
@@ -94,11 +94,11 @@
 	<hr/>
 	<div class="auto-style12">
 		<strong>
-			課題10：金種計算 Part.2
+			課題05：今年はうるう年？ Part.2
 			<br />
 		</strong>
 		<span class="auto-style13">
-			キーワード：for文，除算演算子，剰余演算子，配列
+			キーワード：閏年、if文、else if、比較演算子、剰余演算子
 		</span>
 	</div>
 	<hr/>
@@ -114,24 +114,15 @@
 					<p class="auto-style15">
 						<strong>
 							<span class="auto-style14">
-								for文を使って金種計算するプログラムを作成しなさい。
+								【if, else if 版】閏年判定を行うプログラムを作成しなさい。ただし、if, else if, elseを使うこと。
 							</span>
 						</strong>
 					</p>
 					<p class="auto-style15">
 						<br />
-						<span class="auto-style14">実行例：</span><br />
-						&emsp;&emsp;金額を入力してください &gt; 23456<br />
-						&emsp;&emsp;10000円札は2枚です<br />
-						&emsp;&emsp;5000円札は0枚です<br />
-						&emsp;&emsp;2000円札は1枚です<br />
-						&emsp;&emsp;1000円札は1枚です<br />
-						&emsp;&emsp;500円玉は0枚です<br />
-						&emsp;&emsp;100円玉は4枚です<br />
-						&emsp;&emsp;50円玉は1枚です<br />
-						&emsp;&emsp;10円玉は0枚です<br />
-						&emsp;&emsp;5円玉は1枚です<br />
-						&emsp;&emsp;1円玉は1枚です<br />
+						西暦を入力し閏年かどうかを判定し、閏年なら○を、そうでなければ×を表示する。<br />
+						閏年：西暦で、4で割り切れて100で割切れない、または400で割切れる年（2月は29日まで）<br />
+						★3つの条件を別々の if, else if文 で作成すること<br />
 					</p>
 				</div>
 			</fieldset>
@@ -144,15 +135,13 @@
 
 int	main( void )
 {
-	int	money;	// 紙幣や硬貨の枚数を計算する金額
-	int	bill[ 10 ] = { 10000, 5000, 2000, 1000, 500, 100, 50, 10, 5, 1 };// 紙幣や硬貨の額
-	int	no;		// 現在調べている紙幣や硬貨の枚数
-	int	i;
+	int	year;	// 整数：調べる年
 
-	printf( "金額を入力してください >" );
-	scanf( "%d", &money );
+	printf( "西暦を入力してください" );
+	scanf( "%d", &year );
+	if ( year <= 0 )	return 0;
 
-	//// 以下に金種計算のプログラムを作成する
+	//// 以下に閏年を判定するプログラムを作成する
 
 	return 0;
 }</textarea>
@@ -164,7 +153,7 @@ int	main( void )
 			<button class="auto-style2" name="throws">提出</button><br />
 			<hr/>
 			<p class="auto-style5">
-				最終更新日：YYYY.MM.DD
+				最終更新日：2016.03.28
 			</p>
 		</div>
 	</form>

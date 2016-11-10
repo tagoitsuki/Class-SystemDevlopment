@@ -5,7 +5,7 @@
 	<meta content="ja" http-equiv="Content-Language" />
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 	<title>
-		課題10
+		課題11
 	</title>
 	<style type="text/css">
 		.auto-style1 {
@@ -25,7 +25,6 @@
 			font-size: larger;
 		}
 		.auto-style12 {
-			text-align: center;
 			font-size: x-large;
 			font-family: "Arial Black";
 		}
@@ -94,11 +93,11 @@
 	<hr/>
 	<div class="auto-style12">
 		<strong>
-			課題10：金種計算 Part.2
+			課題11：10進数を2進数に変換する Part.2
 			<br />
 		</strong>
 		<span class="auto-style13">
-			キーワード：for文，除算演算子，剰余演算子，配列
+			キーワード：for文,基数変換
 		</span>
 	</div>
 	<hr/>
@@ -114,24 +113,14 @@
 					<p class="auto-style15">
 						<strong>
 							<span class="auto-style14">
-								for文を使って金種計算するプログラムを作成しなさい。
+								for文を使って、10進数の数を入力すると2進数に変換する基数変換の手続きを作成しなさい。
 							</span>
 						</strong>
 					</p>
 					<p class="auto-style15">
 						<br />
-						<span class="auto-style14">実行例：</span><br />
-						&emsp;&emsp;金額を入力してください &gt; 23456<br />
-						&emsp;&emsp;10000円札は2枚です<br />
-						&emsp;&emsp;5000円札は0枚です<br />
-						&emsp;&emsp;2000円札は1枚です<br />
-						&emsp;&emsp;1000円札は1枚です<br />
-						&emsp;&emsp;500円玉は0枚です<br />
-						&emsp;&emsp;100円玉は4枚です<br />
-						&emsp;&emsp;50円玉は1枚です<br />
-						&emsp;&emsp;10円玉は0枚です<br />
-						&emsp;&emsp;5円玉は1枚です<br />
-						&emsp;&emsp;1円玉は1枚です<br />
+						&emsp;&emsp;ただし、10進数の最大値は2047とする。<br />
+						&emsp;&emsp;変数binには、はじめに1024を代入しておき、binが0より大きい間繰り返す。<br />
 					</p>
 				</div>
 			</fieldset>
@@ -144,15 +133,14 @@
 
 int	main( void )
 {
-	int	money;	// 紙幣や硬貨の枚数を計算する金額
-	int	bill[ 10 ] = { 10000, 5000, 2000, 1000, 500, 100, 50, 10, 5, 1 };// 紙幣や硬貨の額
-	int	no;		// 現在調べている紙幣や硬貨の枚数
-	int	i;
+	int	dec;	// 調べる金額
+	int	no;		// 現在の桁の数
+	int	bin;	// 2進数の現在の桁の値
 
-	printf( "金額を入力してください >" );
-	scanf( "%d", &money );
+	printf( "2進数に変換する値を入力してください >" );
+	scanf( "%d", &dec );
 
-	//// 以下に金種計算のプログラムを作成する
+	//// 以下に10進数を2進数に変換するプログラムを作成する
 
 	return 0;
 }</textarea>

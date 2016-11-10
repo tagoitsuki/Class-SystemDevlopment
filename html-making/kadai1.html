@@ -5,7 +5,7 @@
 	<meta content="ja" http-equiv="Content-Language" />
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 	<title>
-		課題10
+		課題01
 	</title>
 	<style type="text/css">
 		.auto-style1 {
@@ -94,11 +94,11 @@
 	<hr/>
 	<div class="auto-style12">
 		<strong>
-			課題10：金種計算 Part.2
+			課題01：金種計算
 			<br />
 		</strong>
 		<span class="auto-style13">
-			キーワード：for文，除算演算子，剰余演算子，配列
+			キーワード：順次処理・整数型・徐算演算子・剰余演算子・代入演算子・金種計算
 		</span>
 	</div>
 	<hr/>
@@ -114,25 +114,35 @@
 					<p class="auto-style15">
 						<strong>
 							<span class="auto-style14">
-								for文を使って金種計算するプログラムを作成しなさい。
+								金種計算（ある金額に対し、合計が同額となる紙幣と硬貨の必要最小限の枚数を求める計算）を行いその結果を出力するプログラムを作成しなさい。
 							</span>
 						</strong>
 					</p>
 					<p class="auto-style15">
-						<br />
-						<span class="auto-style14">実行例：</span><br />
-						&emsp;&emsp;金額を入力してください &gt; 23456<br />
-						&emsp;&emsp;10000円札は2枚です<br />
-						&emsp;&emsp;5000円札は0枚です<br />
-						&emsp;&emsp;2000円札は1枚です<br />
-						&emsp;&emsp;1000円札は1枚です<br />
-						&emsp;&emsp;500円玉は0枚です<br />
-						&emsp;&emsp;100円玉は4枚です<br />
-						&emsp;&emsp;50円玉は1枚です<br />
-						&emsp;&emsp;10円玉は0枚です<br />
-						&emsp;&emsp;5円玉は1枚です<br />
-						&emsp;&emsp;1円玉は1枚です<br />
+						<span class="auto-style14">金種計算の例：</span><br />
+						&emsp;&emsp;アルバイト料を2万3千4百5十6円受け取る状況を考えてみましょう。10000,5000,1000円札、500,100,50,10,5,1円玉をそれぞれ何枚受け取りますか。<br />
+						&emsp;&emsp;（1円玉を2万3千4百5十6枚ももらったりすることはないですね）？通常、合計が23,456円となる紙幣と硬貨の必要最小限の枚数を受け取ります。<br />
+						&emsp;&emsp;多くの人は、必要枚数の計算を10000円札から始め、1円玉まで順次計算することと思います。
 					</p>
+					<p class="auto-style15">
+						<span class="auto-style14">プログラムの実行例：</span><br/>
+						&emsp;&emsp;金額を入力してください &gt; 23456<br />
+						&emsp;&emsp;10000円は2枚です<br />
+						&emsp;&emsp;5000円は0枚です<br />
+						&emsp;&emsp;1000円は3枚です<br />
+						&emsp;&emsp;500円は0枚です<br />
+						&emsp;&emsp;100円は4枚です<br />
+						&emsp;&emsp;50円は1枚です<br />
+						&emsp;&emsp;10円は0枚です<br />
+						&emsp;&emsp;5円は1枚です<br />
+						&emsp;&emsp;1円は1枚です<br />
+					</p>
+					<p class="auto-style15">
+						<span class="auto-style14">作成するプログラムの追加の条件：</span><br/>
+						&emsp;&emsp;・while文やfor文等の繰り返し文は使用しないこと。<br />
+						&emsp;&emsp;・10000,5000,1000円札、500,100,50,10,5,1円玉の必要枚数をそれぞれ求めることとし、2000円札は含めないこと。<br />
+						&emsp;&emsp;・枚数は整数値(小数点以下のない値)で求めること。例：43÷10=4，3÷5=0，3÷1=3
+					</p>						
 				</div>
 			</fieldset>
 		</div>
@@ -144,18 +154,18 @@
 
 int	main( void )
 {
-	int	money;	// 紙幣や硬貨の枚数を計算する金額
-	int	bill[ 10 ] = { 10000, 5000, 2000, 1000, 500, 100, 50, 10, 5, 1 };// 紙幣や硬貨の額
-	int	no;		// 現在調べている紙幣や硬貨の枚数
-	int	i;
+	int	money;
+	int	no;
 
-	printf( "金額を入力してください >" );
+	printf( "金額を入力してください > " );
 	scanf( "%d", &money );
 
-	//// 以下に金種計算のプログラムを作成する
-
+	//// 以下に金種計算を行うプログラムを作成する。
+	
+	
 	return 0;
-}</textarea>
+}
+		</textarea>
 		<div class="auto-style22" id="layer1">
 			ファイルで提出する（.cpp限定）
 			<input name="cppfiles" style="width: 504px" type="file" />
