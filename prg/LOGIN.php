@@ -98,8 +98,8 @@
 		}
 		echo '<div>0</div>';
 		if(!empty($name)&& !empty($Password)){
-					
-			$mysqli = new mysqli("localhost:3306", "root", "21tago82", "prg");
+			//hogehogeのところはDBのサーバのpass			
+			$mysqli = new mysqli("localhost:3306", "root", "hogehoge", "prg");
 			if($mysqli->connect_error){
 				//CONNECT FAILURE
 				echo "<p>CONNECT FAILURE</p>";
