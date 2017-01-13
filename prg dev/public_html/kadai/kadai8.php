@@ -145,9 +145,9 @@ int	main( void )
 	return 0;
 }</textarea>
 		<div class="auto-style22" id="layer1">
-			<button class="auto-style2" name="faq" action="faq.php">質問</button>　
+			<button class="auto-style2" name="faq" action="kadai8.php">質問</button>　
 			<button class="auto-style2" name="runstart" action="kadai8.php">コンパイル・実行</button>　
-			<button class="auto-style2" name="throws">提出</button><br />
+			<button class="auto-style2" name="throws" action="kadai8.php">提出</button><br />
 			<hr/>
 			<p class="auto-style5">
 				最終更新日：2016.04.01
@@ -167,7 +167,14 @@ int	main( void )
 		header("Location: http://10.8.68.230/~tto/compile_execute_result.php?KNo=8");
 		exit;
 	}
+	else if(isset($_POST['faq])){
+		header("Location: http://10.8.68.230/~tto/faq.php");
+		exit;
+	}
+	else if(isset($_POST['throws'])){
+		//提出したときの動作を記述	
+	}
 	else{
-		
+		//何も記述しない
 	}
 ?>
