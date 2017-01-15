@@ -213,7 +213,10 @@ if(!isset($_SESSION["USERID"])){
 <br/><hr/>
 <center>
 <div><a href="https://www.youtube.com/channel/UCOLHDVyHEmX9m-0bsocEFzA" target="_blank">プログラミング利用技術演習　解説動画YouTubeチャンネル</a></div>
-<hr/><div><a href="faq.php">質問</a>&emsp;<a href="Destory.php">ログアウト</a>
-&emsp;<a href="pass_change.php">パスワード変更</a></div></center>
+<hr/><div><a href="faq.php">質問</a>
+&emsp;<a href="Destory.php">ログアウト</a>
+&emsp;<a href="pass_change.php">パスワード変更</a>
+&emsp;<a href="show.php" target="_blank">システム利用者情報表示・質問リスト</a>
+</div></center>
 </body>
 </html>

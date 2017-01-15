@@ -12,6 +12,8 @@ if(!isset($_SESSION["USERID"])){
 <head>
 <meta content="ja" http-equiv="Content-Language" />
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="x-ua-compatible" content="IE=7">
+<meta http-equiv="x-ua-compatible" content="IE=Emulate7">
 <title><?PHP if($_SESSION['POWER']=='1') echo '教員'; else echo 'SA';?></title>
 <style type="text/css">
 .auto-style1 {
@@ -219,6 +221,7 @@ if(!isset($_SESSION["USERID"])){
 <hr/><div><a href="FAQ_itiran.php">質問リスト</a>
 &emsp;<a href="LOGIN.php">ログアウト</a>
 &emsp;<a href="pass_change.php">パスワード変更</a>
+&emsp;<a href="show.php" target="_blank">システム利用者情報表示</a>
 <?PHP
 	if($_SESSION['POWER']=='1'){
 		echo '<hr/><a href="classinsert.php">クラスの追加</a>&emsp;<a href="userinsert.php">ユーザーの追加</a>';
