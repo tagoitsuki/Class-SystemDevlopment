@@ -19,8 +19,7 @@ if(!isset($_SESSION["USERID"])){
 <?PHP
 	echo '<h2>システム利用者情報表示</h2><p>';
 	
-	//$mysqli = new mysqli("localhost:3306", "tto", "nitkambayashi", "prog");
-	$mysqli = new mysqli("localhost:3306", "root", "21tago82", "prg");
+	$mysqli = new mysqli("localhost:3306", "tto", "nitkambayashi", "prog");
 	if($mysqli->connect_error){
 		//CONNECT FAILURE
 		echo "<p>CONNECT FAILURE</p>";
