@@ -23,9 +23,9 @@
 <?php // -*- coding: utf-8 -*-
 //header("Content-type: text/html; charset=UTF-8");
 $server = "localhost:3306"; //ホスト名。ポート番号指定の時は、"10.2.3.4:8809" のように指定する
-$user   = "root";    //ユーザー名
-$passwd = "21tago82";   //パスワード
-$dbname = "prg";    //データベース名
+$user   = "tto";    //ユーザー名
+$passwd = "nitkambayashi";   //パスワード
+$dbname = "prog";    //データベース名
 
 	$link = new mysqli($server, $user, $passwd, $dbname);
 	if ($link->connect_errno)
