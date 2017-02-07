@@ -4,7 +4,7 @@ $gakuseki  = $_GET['gakuseki'];
 $date = $_GET['date'];
 ?>
 <?php
-$server = "localhost"; //ホスト名。ポート番号指定の時は、"10.2.3.4:8809" のように指定する
+$server = "10.8.68.230"; //ホスト名。ポート番号指定の時は、"10.2.3.4:8809" のように指定する
 $user   = "tto";    //ユーザー名
 $passwd = "nitkambayashi";   //パスワード
 $dbname = "prog";    //データベース名
@@ -31,37 +31,35 @@ $func = "SELECT file_pass FROM teisyutsu where fk_id_kadai=$kadai_id AND fk_id_u
 
 $result = mysqli_query($link,$func);
 
-#mysqli_commit();
-#echo $result;
-#echo $result;
+$code;
 
-$aaaa;
-
-#echo mysqli_fetch_row($result)[0];
-while ($row = mysqli_fetch_array($result)) {
-	$aaaa = $row[0];
-
-	#echo $aaaa;
-	#echo substr($aaaa,0,-3).'txt';
-	#echo $row[1] . "\n";
-	#echo $row[2] . "\n";
-}
-
-	$fp = fopen($aaaa, "r");
+	while ($row = mysqli_fetch_array($result)) {
+		$code = $row[0];
+    }
+	$fp = fopen($code, "r");
 	while ($line = fgets($fp)) {
-		echo "$line<br />";
+		echo "$line</br>";
 	}
 	fclose($fp);
-	#mysqli_close($link);
+
+  if (isset($_POST["sub1"])) {
+      $kbn = htmlspecialchars($_POST["sub1"], ENT_QUOTES, "UTF-8");
+      switch ($kbn) {
+          case "○": echo "Update ○";mysqli_query($link,"update teisyutsu set joutai ='○' where fk_id_kadai=$kadai_id AND fk_id_user =$gakuseki AND date = '$date';"); break;
+          case "×": echo "Update ×";mysqli_query($link,"update teisyutsu set joutai ='×' where fk_id_kadai=$kadai_id AND fk_id_user =$gakuseki AND date = '$date';"); break;
+          default:  echo "error"; exit;
+      }
+  }
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta content="ja" http-equiv="Content-Language" />
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<meta http-equiv="x-ua-compatible" content="IE=7">
-<meta http-equiv="x-ua-compatible" content="IE=Emulate7">
-<title>課題</title>
+<meta http-equiv="x-ua-compatible" content="IE=10">
+<meta http-equiv="x-ua-compatible" content="IE=Emulate10">
+<title>課題<?PHP echo $_GET['kadai_id'];?> -  <?PHP echo $_GET['gakuseki'];?></title>
 <style type="text/css">
 .auto-style1 {
 	text-align: right;
@@ -83,21 +81,46 @@ while ($row = mysqli_fetch_array($result)) {
 
 <body>
 
+
+<textarea name="code" cols="100" rows="50" readonly="readonly"><?php
+while ($line = fgets($fp)) {
+  echo "$line</br>";
+}
+fclose($fp);
+?></textarea>
+
 <?php
-	if (isset($_POST["sub1"])) {
-		$kbn = htmlspecialchars($_POST["sub1"], ENT_QUOTES, "UTF-8");
-		switch ($kbn) {
-			case "○": echo "登録処理";mysqli_query($link,"update teisyutsu set joutai ='○' where fk_id_kadai=$kadai_id AND fk_id_user =$gakuseki AND date = '$date';"); break;
-			case "×": echo "変更処理";mysqli_query($link,"update teisyutsu set joutai ='×' where fk_id_kadai=$kadai_id AND fk_id_user =$gakuseki AND date = '$date';"); break;
-			default:  echo "エラー"; exit;
-		}
-	}
-	mysqli_close($link);
+//質問取得のSQL文に変更をお願いします。
+$func = "SELECT cmnt_user FROM teisyutsu WHERE fk_id_user = '".$_SESSION['USERID']."' AND kadai = '".$_GET['kadai_id']."'";
+
+$result = mysqli_query($link,$func);
+
+$question;
+
+	while ($row = mysqli_fetch_array($result)) {
+		$question = $row[0];
+    }
+	$fp = fopen($question, "r");
 ?>
-<textarea name="example" cols="50" rows="10"></textarea>
+
 <form method="POST" action="">
 <input type="submit" value="○"  name="sub1">　
 <input type="submit" value="×"  name="sub1">　　
 </form>
+
+<div class="auto-style2" style="width:100%">質問</div>
+
+<textarea name="faq" cols="100" rows="10" readonly="readonly"><?php
+while ($line = fgets($fp)) {
+  echo "$line<br />";
+}
+fclose($fp);
+?></textarea>
+
+<?php
+
+mysqli_close($link);
+
+?>
 </body>
 </html>
