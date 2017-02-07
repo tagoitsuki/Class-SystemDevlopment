@@ -6,7 +6,5 @@ wiki
 
 webページ（学内限定）
 ・ログイン画面
-　http://10.8.68.230/~tto/LOGIN.php
+　http://10.8.68.230/~tto/
  
- UserID（全員共通）：1234567
- PASSWORD（共通)：prgprg
