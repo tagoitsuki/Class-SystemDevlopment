@@ -176,21 +176,21 @@ if(!isset($_SESSION["USERID"])){
 	</tr>
 	<tr>
 		<th style="width: 6%">提出状況</th>
-		<td style="width: 6%"><a href="itiran.php?id=46">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=47">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=48">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=49">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=50">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=51">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=52">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=53">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=54">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=55">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=56">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=57">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=58">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=59">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=60">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=46&kname=D2-1">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=47&kname=D3-1">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=48&kname=D4-1">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=49&kname=D5-1">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=50&kname=E1-1">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=51&kname=E1-2">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=52&kname=E1-3">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=53&kname=E1-4">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=54&kname=E1-5">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=55&kname=E2-1">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=56&kname=E2-2">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=57&kname=E2-3">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=58&kname=E2-4">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=59&kname=E2-5">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=60&kname=F1-1">見る</a></td>
 	</tr>
 	<tr>
 		<th style="width: 6%">課題No.</th>
@@ -203,28 +203,30 @@ if(!isset($_SESSION["USERID"])){
 		<th style="width: 6%">H-4</th>
 		<th style="width: 6%">H-5</th>
 		<th style="width: 6%">H-6</th>
+		<th style="width: 6%">練習1</th>
 	</tr>
 	<tr>
 		<th style="width: 6%">提出状況</th>
-		<td style="width: 6%"><a href="itiran.php?id=61">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=62">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=63">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=64">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=65">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=66">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=67">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=68">見る</a></td>
-		<td style="width: 6%"><a href="itiran.php?id=69">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=61&kname=F2-1">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=62&kname=G1-1">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=63&kname=G2-1">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=64&kname=H-1">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=65&kname=H-2">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=66&kname=H-3">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=67&kname=H-4">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=68&kname=H-5">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=69&kname=H-6">見る</a></td>
+		<td style="width: 6%"><a href="itiran.php?id=70&kname=練習1">見る</a></td>
 	</tr>
 </table>
 <center>
 <hr/><div><a href="FAQ_itiran.php">質問リスト</a>
-&emsp;<a href="LOGIN.php">ログアウト</a>
+&emsp;<a href="Destory.php">ログアウト</a>
 &emsp;<a href="pass_change.php">パスワード変更</a>
 &emsp;<a href="show.php" target="_blank">システム利用者情報表示</a>
 <?PHP
 	if($_SESSION['POWER']=='1'){
-		echo '<hr/><a href="classinsert.php">クラスの追加</a>&emsp;<a href="userinsert.php">ユーザーの追加</a>';
+		echo '<hr/><a href="classinsert.php">クラスの追加</a>&emsp;<a href="userinsert.php">ユーザーの追加</a>&emsp;<a href="kirikae.php">課題表示設定</a>';
 	}
 ?>
 </div>

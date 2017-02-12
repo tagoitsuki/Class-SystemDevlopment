@@ -20,7 +20,7 @@
 </select></td></tr>
 <?php // -*- coding: utf-8 -*-
 //header("Content-type: text/html; charset=UTF-8");
-$server = "localhost:3306"; //ホスト名。ポート番号指定の時は、"10.2.3.4:8809" のように指定する
+$server = "localhost"; //ホスト名。ポート番号指定の時は、"10.2.3.4:8809" のように指定する
 $user   = "tto";    //ユーザー名
 $passwd = "nitkambayashi";   //パスワード
 $dbname = "prog";    //データベース名
@@ -70,6 +70,7 @@ echo "</form>";
 echo "</body>";
 echo "</html>";
 if(isset($_POST['exe'])){
+	$kadai = 1; // teisyutsuで使用
 	if((count($_POST) > 0)&&($_POST['num']!=NULL)&&($_POST['name']!=NULL)&&($_POST['pass']!=NULL)){
 		$num = $_POST['num'];
 		$name =$_POST['name'];
@@ -78,6 +79,8 @@ if(isset($_POST['exe'])){
 		$cla = $_POST['class'];
 		$insert = "INSERT INTO user VALUES('$num','$name','$pas','$pow','$cla'); ";
 		mysqli_query($link , $insert);
+		$sql = "INSERT INTO teisyutsu (fk_id_user, fk_id_kadai, joutai, fk_id_saiten, cmnt_sitn, cmnt_user, date, file_pass) VALUES ('".$num."', 'R1', '-', NULL, NULL, NULL, NULL, NULL);";
+		mysqli_query($link , $sql);
 	}
 	$result = mysqli_query($link, "SELECT * FROM user");// 	クエリ―設定
 	if (!$result)

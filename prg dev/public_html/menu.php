@@ -6,9 +6,11 @@ if(!isset($_SESSION["USERID"])){
 	exit;
 }
 ?>
+<?PHP
+	include 'kadaijyoudai.php';
+?>
 <!DOCTYPE html>
 <html>
-
 <head>
 <meta content="ja" http-equiv="Content-Language" />
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
@@ -70,24 +72,24 @@ if(!isset($_SESSION["USERID"])){
 	</tr>
 	<tr>
 		<th>状況</th>
-		<td style="width: 3%" id="1"><a href="kadai/kadai1.php">未回答</a></td>
-		<td style="width: 3%" id="2"><a href="kadai/kadai2.php">未回答</a></td>
-		<td style="width: 3%" id="3"><a href="kadai/kadai3.php">未回答</a></td>
-		<td style="width: 3%" id="4"><a href="kadai/kadai4.php">未回答</a></td>
-		<td style="width: 3%" id="5"><a href="kadai/kadai5.php">未回答</a></td>
-		<td style="width: 3%" id="6"><a href="kadai/kadai6.php">未回答</a></td>
-		<td style="width: 3%" id="7"><a href="kadai/kadai7.php">未回答</a></td>
-		<td style="width: 3%" id="8"><a href="kadai/kadai8.php">未回答</a></td>
-		<td style="width: 3%" id="9"><a href="kadai/kadai9.php">未回答</a></td>
-		<td style="width: 3%" id="10"><a href="kadai/kadai10.php">未回答</a></td>
-		<td style="width: 3%" id="11"><a href="kadai/kadai11.php">未回答</a></td>
-		<td style="width: 3%" id="12"><a href="kadai/kadai12.php">未回答</a></td>
-		<td style="width: 3%" id="13"><a href="kadai/kadai13.php">未回答</a></td>
-		<td style="width: 3%" id="14"><a href="kadai/kadai14.php">未回答</a></td>
-		<td style="width: 3%" id="15"><a href="kadai/kadai15.php">未回答</a></td>
-		<td style="width: 3%" id="16"><a href="kadai/kadai16.php">未回答</a></td>
-		<td style="width: 3%" id="17"><a href="kadai/kadai17.php">未回答</a></td>
-		<td style="width: 3%" id="18"><a href="kadai/kadai18.php">未回答</a></td>
+		<td style="width: 3%" name="1"><a href="kadai/kadai1.php"><?PHP kadaijyoudai(1); ?></a></td>
+		<td style="width: 3%" name="2"><a href="kadai/kadai2.php"><?PHP kadaijyoudai(2); ?></a></td>
+		<td style="width: 3%" name="3"><a href="kadai/kadai3.php"><?PHP kadaijyoudai(3); ?></a></td>
+		<td style="width: 3%" name="4"><a href="kadai/kadai4.php"><?PHP kadaijyoudai(4); ?></a></td>
+		<td style="width: 3%" name="5"><a href="kadai/kadai5.php"><?PHP kadaijyoudai(5); ?></a></td>
+		<td style="width: 3%" name="6"><a href="kadai/kadai6.php"><?PHP kadaijyoudai(6); ?></a></td>
+		<td style="width: 3%" name="7"><a href="kadai/kadai7.php"><?PHP kadaijyoudai(7); ?></a></td>
+		<td style="width: 3%" name="8"><a href="kadai/kadai8.php"><?PHP kadaijyoudai(8); ?></a></td>
+		<td style="width: 3%" name="9"><a href="kadai/kadai9.php"><?PHP kadaijyoudai(9); ?></a></td>
+		<td style="width: 3%" name="10"><a href="kadai/kadai10.php"><?PHP kadaijyoudai(10); ?></a></td>
+		<td style="width: 3%" name="11"><a href="kadai/kadai11.php"><?PHP kadaijyoudai(11); ?></a></td>
+		<td style="width: 3%" name="12"><a href="kadai/kadai12.php"><?PHP kadaijyoudai(12); ?></a></td>
+		<td style="width: 3%" name="13"><a href="kadai/kadai13.php"><?PHP kadaijyoudai(13); ?></a></td>
+		<td style="width: 3%" name="14"><a href="kadai/kadai14.php"><?PHP kadaijyoudai(14); ?></a></td>
+		<td style="width: 3%" name="15"><a href="kadai/kadai15.php"><?PHP kadaijyoudai(15); ?></a></td>
+		<td style="width: 3%" name="16"><a href="kadai/kadai16.php"><?PHP kadaijyoudai(16); ?></a></td>
+		<td style="width: 3%" name="17"><a href="kadai/kadai17.php"><?PHP kadaijyoudai(17); ?></a></td>
+		<td style="width: 3%" name="18"><a href="kadai/kadai18.php"><?PHP kadaijyoudai(18); ?></a></td>
 	</tr>
 	<tr>
 		<th>課題No.</th>
@@ -112,24 +114,24 @@ if(!isset($_SESSION["USERID"])){
 	</tr>
 	<tr>
 		<th>状況</th>
-		<td style="width: 3%"><a href="kadai/kadai19.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadai20.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadai21.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadai22.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadai23.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadai24.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadai25.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadai26.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadai27.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiA1-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiA2-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiA3-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiA3-2.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiA4-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiB1-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiB1-2.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiB2-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiB3-1.php">未回答</a></td>
+		<td style="width: 3%"><a href="kadai/kadai19.php"><?PHP kadaijyoudai(19); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadai20.php"><?PHP kadaijyoudai(20); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadai21.php"><?PHP kadaijyoudai(21); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadai22.php"><?PHP kadaijyoudai(22); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadai23.php"><?PHP kadaijyoudai(23); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadai24.php"><?PHP kadaijyoudai(24); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadai25.php"><?PHP kadaijyoudai(25); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadai26.php"><?PHP kadaijyoudai(26); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadai27.php"><?PHP kadaijyoudai(27); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiA1-1.php"><?PHP kadaijyoudai(28); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiA2-1.php"><?PHP kadaijyoudai(29); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiA3-1.php"><?PHP kadaijyoudai(30); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiA3-2.php"><?PHP kadaijyoudai(31); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiA4-1.php"><?PHP kadaijyoudai(32); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiB1-1.php"><?PHP kadaijyoudai(33); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiB1-2.php"><?PHP kadaijyoudai(34); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiB2-1.php"><?PHP kadaijyoudai(35); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiB3-1.php"><?PHP kadaijyoudai(36); ?></a></td>
 	</tr>
 	<tr>
 		<th>課題No.</th>
@@ -154,24 +156,24 @@ if(!isset($_SESSION["USERID"])){
 	</tr>
 	<tr>
 		<th>状況</th>
-		<td style="width: 3%"><a href="kadai/kadaiB4-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiB5-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiB5-2.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiC1-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiC2-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiC2-2.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiC2-3.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiC2-4.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiD1-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiD2-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiD3-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiD4-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiD5-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiE1-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiE1-2.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiE1-3.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiE1-4.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiE1-5.php">未回答</a></td>
+		<td style="width: 3%"><a href="kadai/kadaiB4-1.php"><?PHP kadaijyoudai(37); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiB5-1.php"><?PHP kadaijyoudai(38); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiB5-2.php"><?PHP kadaijyoudai(39); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiC1-1.php"><?PHP kadaijyoudai(40); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiC2-1.php"><?PHP kadaijyoudai(41); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiC2-2.php"><?PHP kadaijyoudai(42); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiC2-3.php"><?PHP kadaijyoudai(43); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiC2-4.php"><?PHP kadaijyoudai(44); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiD1-1.php"><?PHP kadaijyoudai(45); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiD2-1.php"><?PHP kadaijyoudai(46); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiD3-1.php"><?PHP kadaijyoudai(47); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiD4-1.php"><?PHP kadaijyoudai(48); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiD5-1.php"><?PHP kadaijyoudai(49); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiE1-1.php"><?PHP kadaijyoudai(50); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiE1-2.php"><?PHP kadaijyoudai(51); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiE1-3.php"><?PHP kadaijyoudai(52); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiE1-4.php"><?PHP kadaijyoudai(53); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiE1-5.php"><?PHP kadaijyoudai(54); ?></a></td>
 	</tr>
 	<tr>
 		<th>課題No.</th>
@@ -190,24 +192,26 @@ if(!isset($_SESSION["USERID"])){
 		<th style="width: 3%">H-4</th>
 		<th style="width: 3%">H-5</th>
 		<th style="width: 3%">H-6</th>
+		<th style="width: 3%">練習1</th>
 	</tr>
 	<tr>
 		<th>状況</th>
-		<td style="width: 3%"><a href="kadai/kadaiE2-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiE2-2.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiE2-3.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiE2-4.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiE2-5.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiF1-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiF2-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiG1-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiG2-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiH-1.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiH-2.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiH-3.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiH-4.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiH-5.php">未回答</a></td>
-		<td style="width: 3%"><a href="kadai/kadaiH-6.php">未回答</a></td>
+		<td style="width: 3%"><a href="kadai/kadaiE2-1.php"><?PHP kadaijyoudai(55); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiE2-2.php"><?PHP kadaijyoudai(56); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiE2-3.php"><?PHP kadaijyoudai(57); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiE2-4.php"><?PHP kadaijyoudai(58); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiE2-5.php"><?PHP kadaijyoudai(59); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiF1-1.php"><?PHP kadaijyoudai(60); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiF2-1.php"><?PHP kadaijyoudai(61); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiG1-1.php"><?PHP kadaijyoudai(62); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiG2-1.php"><?PHP kadaijyoudai(63); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiH-1.php"><?PHP kadaijyoudai(64); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiH-2.php"><?PHP kadaijyoudai(65); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiH-3.php"><?PHP kadaijyoudai(66); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiH-4.php"><?PHP kadaijyoudai(67); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiH-5.php"><?PHP kadaijyoudai(68); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiH-6.php"><?PHP kadaijyoudai(69); ?></a></td>
+		<td style="width: 3%"><a href="kadai/kadaiR1.php"><?PHP kadaijyoudai(R1); ?></a></td>
 	</tr>
 </table>
 <br/><hr/>

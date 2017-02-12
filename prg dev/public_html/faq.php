@@ -49,18 +49,17 @@
 	<div>
 		<form method="post">
 			課題番号：<input name="Text1" type="text" placeholder="課題番号を入力"/>
-			<?PHP
-				$_GET['KNo'];
-			?>
 			<br />
 		<br />
 			<strong>質問内容：</strong><br/>
 		<textarea cols="20" name="TextArea1" style="width: 100%; height: 200px; font-size: large;" onkeydown="insertTab(this, event);"></textarea>
 			<div class="auto-style2">
-				<button name="Abutton1" type="submit" action="faq_conp.php">質問を送ります！</button>&nbsp;
-				<button name="Abutton2" type="submit" action="menu.php">やっぱ投稿しない</button></div>
+				<button name="Abutton1" type="submit" formaction="faq_conp.php">質問を送ります！</button>&nbsp;
+				<button name="Abutton2" type="submit" formaction="menu.php">やっぱ投稿しない</button></div>
 		</form>
 	</div>
-</body>
-</html>
 
+
+</body>
+
+</html>

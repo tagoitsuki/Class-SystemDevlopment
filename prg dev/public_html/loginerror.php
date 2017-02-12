@@ -37,7 +37,7 @@
 </div>
 <form method="post">
 	<div class="auto-style3">
-		<button name="Abutton1" type="submit" formaction="LOGIN.php">もどる</button></div>
+		<button name="Abutton1" type="submit" formaction="index.php">もどる</button></div>
 </form>
 
 </body>

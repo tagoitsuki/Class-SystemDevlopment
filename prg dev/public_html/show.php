@@ -6,6 +6,9 @@ if(!isset($_SESSION["USERID"])){
 	exit;
 }
 ?>
+<?PHP
+	include 'kadaijyoudai.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +22,7 @@ if(!isset($_SESSION["USERID"])){
 <?PHP
 	echo '<h2>システム利用者情報表示</h2><p>';
 	
-	$mysqli = new mysqli("localhost:3306", "tto", "nitkambayashi", "prog");
+	$mysqli = new mysqli("localhost", "tto", "nitkambayashi", "prog");
 	if($mysqli->connect_error){
 		//CONNECT FAILURE
 		echo "<p>CONNECT FAILURE</p>";
@@ -92,12 +95,16 @@ if(!isset($_SESSION["USERID"])){
 	
 	echo '</table></p>';
 	if($_SESSION['POWER']=="3"){
-		echo '<h3>質問リスト</h3><table border="1"><th>No.</th><th>課題ID番号</th><th>送信内容</th><th>返答内容</th></tr>';
+		echo '<h3>質問・詳細リスト</h3><table border="1"><th>No.</th><th>課題ID番号</th><th>状況</th><th>送信内容</th><th>返答内容</th></tr>';
 		$sql6 = "SELECT * FROM teisyutsu WHERE fk_id_user='".$_SESSION['USERID']."'";
 		$no = 1;
 		$result6 = $mysqli->query($sql6);
 		while($row = $result6->fetch_assoc()){
-			echo '<tr><th>'.$no.'</th><td>'.$row['fk_id_kadai'].'</td><td>'.$row['cmnt_user'].'</td><td>'.$row['cmnt_sitn'].'</td>';
+			
+			echo '<tr><th>'.$no.'</th><td>'.$row['fk_id_kadai'].'</td><td>';
+			kadaijyoudai($row['fk_id_kadai']);
+			echo ' <td>'.$row['cmnt_user'].'</td><td>'.$row['cmnt_sitn'].'</td>';
+			$no += 1;
 		}
 	}
 	$mysqli->close();
