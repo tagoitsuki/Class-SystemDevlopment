@@ -5,6 +5,9 @@ tar.gzファイルはLinuxで解凍できますが、zipはできないのでご
 wiki
 ->https://github.com/tagoitsuki/Class-SystemDevlopment.wiki.git
 
+DB List
+->https://github.com/tagoitsuki/Class-SystemDevlopment/wiki/DB-List
+
 webページ（学内限定）
 ・ログイン画面
 　http://10.8.68.230/~tto/
